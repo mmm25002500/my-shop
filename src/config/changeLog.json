@@ -1,0 +1,23 @@
+[
+    {
+        "version": "1.1",
+        "description": "建構專案",
+        "date": "2023/01/22",
+        "content": [
+            "建立 README",
+            "建立更新日誌"
+        ]
+    },
+    {
+        "version": "1.0.0",
+        "description": "建構專案",
+        "date": "2023/01/22",
+        "content": [
+            "建立 React + Vite 專案",
+            "建立 CNAME",
+            "建立 404 頁面",
+            "建立 Footer",
+            "建立 Navbar"
+        ]
+    }
+]
