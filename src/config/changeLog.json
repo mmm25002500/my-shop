@@ -1,5 +1,21 @@
 [
     {
+        "version": "1.3",
+        "description": "建構專案",
+        "date": "2023/01/24",
+        "content": [
+            "Navbar 更改樣式",
+            "Navbar 新增手機版",
+            "Navbar 新增外部連結",
+            "新增收合",
+            "將所有 hook 名稱更改",
+            "新增卡片元件",
+            "完成網頁頁面",
+            "新增 Navbar 外部連結",
+            "新增 fontawesome"
+        ]
+    },
+    {
         "version": "1.2",
         "description": "建構專案",
         "date": "2023/01/23",

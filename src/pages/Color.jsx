@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
-const App = () => {
+
+const Color = () => {
   const [darkMode, setDarkMode] = useState(localStorage.getItem('darkMode') === 'true');
 
   useEffect(() => {
@@ -24,4 +25,4 @@ const App = () => {
   )
 }
 
-export default App;
+export default Color;

@@ -1,28 +1,9 @@
-import { useState, useEffect } from 'react';
-
-const App = () => {
-  const [darkMode, setDarkMode] = useState(localStorage.getItem('darkMode') === 'true');
-
-  useEffect(() => {
-    localStorage.setItem('darkMode', darkMode);
-    if (darkMode) {
-      document.documentElement.classList.add('dark');
-    } else {
-      document.documentElement.classList.remove('dark');
-    }
-  }, [darkMode]);
-
+const NotFound = () => {
   return (
     <div>
-      <div>
-        <p className='dark:text-red-400 text-cyan-300'>You clicked {darkMode ? 'On' : 'Off'} times</p>
-        <button onClick={() => setDarkMode(!darkMode)}>
-          Click me
-        </button>
-      </div>
-      <h1>hi</h1>
+      <p className="text-3xl text-center">找不到頁面</p>
     </div>
   )
 }
 
-export default App;
+export default NotFound;
