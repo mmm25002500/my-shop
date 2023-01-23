@@ -1,11 +1,15 @@
-/** @type {import('tailwindcss').Config} */
+/** @type {import('tailwindcss').Config} **/
 module.exports = {
   content: [
     "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    "./src/**/*.{vue,js,ts,jsx,tsx}"
   ],
+  darkMode: "class",
   theme: {
     extend: {},
+     fontFamily: {
+      'mytest': ['Arial', 'sans-serif'],
+    }
   },
   plugins: [],
 }

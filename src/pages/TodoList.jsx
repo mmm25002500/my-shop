@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-import List from './components/List';
+import List from '../components/List';
 
 const App = () => {
   const [ todoList, setTodoList ] = useState(JSON.parse(localStorage.getItem('todoList')) || []);
