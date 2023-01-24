@@ -9,6 +9,7 @@ const navbarData = [
   { name: "教學", path: "/tutor" },
   { name: "機器人", path: "/bot" },
   { name: "伺服器", path: "/server" },
+  { name: "設定", path: "/settings" },
   { name: "個人網站", path: "https://tershi.com" },
   { name: "部落格", path: "https://blog.tershi.com" },
   { name: "履歷表", path: "https://resume.tershi.com"}
@@ -23,7 +24,7 @@ const Navbar = () => {
       <div className="container flex flex-wrap items-center justify-between mx-auto">
         <Link to="/" className="flex items-center">
             {/* <img src="https://flowbite.com/docs/images/logo.svg" className="h-6 mr-3 sm:h-9" alt="Flowbite Logo" /> */}
-            <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">夏特稀的科技小窩</span>
+            <h1 className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">夏特稀的科技小窩</h1>
 
         </Link>
         <button onClick={ () => setNavbarOpen(!navbarOpen)} data-collapse-toggle="navbar-default" type="button" className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
