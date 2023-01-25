@@ -12,7 +12,8 @@ const navbarData = [
   { name: "設定", path: "/settings" },
   { name: "個人網站", path: "https://tershi.com" },
   { name: "部落格", path: "https://blog.tershi.com" },
-  { name: "履歷表", path: "https://resume.tershi.com"}
+  { name: "履歷表", path: "https://resume.tershi.com" },
+  { name: "DC群", path: "https://discord.gg/我還沒做好啦OUO"}
 ];
 
 const Navbar = () => {
@@ -22,7 +23,7 @@ const Navbar = () => {
   return (
     <nav className="bg-gray-100 border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-800">
       <div className="container flex flex-wrap items-center justify-between mx-auto">
-        <Link to="/" className="flex items-center">
+        <Link onClick={() => setNavbarOpen(false)}  to="/" className="flex items-center">
             {/* <img src="https://flowbite.com/docs/images/logo.svg" className="h-6 mr-3 sm:h-9" alt="Flowbite Logo" /> */}
             <h1 className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">夏特稀的科技小窩</h1>
 
@@ -38,14 +39,14 @@ const Navbar = () => {
               {
                 item.path.includes('http') ?
                   <a href={item.path} target="_blank">
-                    <button className='w-full text-gray-900 bg-white border border-gray-100 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700'>
+                    <button className='w-full text-gray-900 bg-white border border-gray-100 hover:bg-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600'>
                       {item.name}
                       <FontAwesomeIcon icon="fa-solid fa-arrow-up-right-from-square" className='pl-1 pb-1 w-2' />
                     </button>
                   </a>
                   :
-                  <NavLink onClick={() => setNavbarOpen(!navbarOpen)} className={({ isActive }) => (isActive ? " text-red-500" : "text-gray-900")} to={item.path}>
-                    <button className="w-full bg-white border border-gray-100 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">
+                  <NavLink onClick={() => setNavbarOpen(!navbarOpen)} className={({ isActive }) => (isActive ? " text-cyan-300" : "text-gray-900 dark:text-white")} to={item.path}>
+                    <button className="w-full bg-white border border-gray-100 hover:bg-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-gray-800 dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600">
                       {item.name}
                     </button>
                   </NavLink>

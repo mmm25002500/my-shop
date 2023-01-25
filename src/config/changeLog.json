@@ -1,5 +1,19 @@
 [
     {
+        "version": "1.5",
+        "description": "建構專案",
+        "date": "2023/01/26",
+        "content": [
+            "將一些頁面圖片拿掉",
+            "完善NotFound頁面",
+            "更新日誌使用動畫",
+            "HomePage 新增container和提醒文字",
+            "Navbar 按鈕暗色模式新增顏色",
+            "Navbar 移除按鈕 focus 樣式",
+            "手機版新增按下標題會收起 Navbar"
+        ]
+    },
+    {
         "version": "1.4",
         "description": "建構專案",
         "date": "2023/01/25",
