@@ -41,7 +41,7 @@ const Navbar = () => {
                   <a href={item.path} target="_blank">
                     <button className='w-full text-gray-900 bg-white border border-gray-100 hover:bg-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600'>
                       {item.name}
-                      <FontAwesomeIcon icon="fa-solid fa-arrow-up-right-from-square" className='pl-1 pb-1 w-2' />
+                        <FontAwesomeIcon icon={['fas', 'arrow-up-right-from-square']} className='pl-1 pb-1 w-2' />
                     </button>
                   </a>
                   :

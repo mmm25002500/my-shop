@@ -4,10 +4,11 @@ const Color = () => {
   const [darkMode, setDarkMode] = useState(localStorage.getItem('darkMode') === 'true');
 
   useEffect(() => {
-    localStorage.setItem('darkMode', darkMode);
     if (darkMode) {
+      localStorage.setItem('darkMode', 'true');
       document.documentElement.classList.add('dark');
     } else {
+      localStorage.setItem('darkMode', 'false');
       document.documentElement.classList.remove('dark');
     }
   }, [darkMode]);
