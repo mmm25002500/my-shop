@@ -41,7 +41,7 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
         <Route path="/product" element={<Product />} />
         <Route path="/settings" element={<Settings />} />
         <Route path="/changes" element={<ChangeLog />} />
-        <Route path="*" element={<NotFound />} fallback={<NotFound />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
     </BrowserRouter>

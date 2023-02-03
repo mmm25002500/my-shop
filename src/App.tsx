@@ -13,7 +13,9 @@ const App = () => {
       localStorage.setItem('darkMode', 'false');
     }
   }, [darkMode]);
-
+  return (
+    <div></div>
+  )
 }
 
 export default App;
