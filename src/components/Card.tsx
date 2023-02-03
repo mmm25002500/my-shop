@@ -1,4 +1,12 @@
-const Card = (props) => {
+interface Props {
+  img: string;
+  title: string;
+  description: string;
+  btn_url: string;
+  btn_txt: string;
+}
+
+const Card = (props: Props) => {
   return (
     <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
       { !props.img ? null :
