@@ -1,5 +1,13 @@
 [
     {
+        "version": "1.7",
+        "description": "建構專案",
+        "date": "2023/03/12",
+        "content": [
+            "feat: update price"
+        ]
+    },
+    {
         "version": "1.6",
         "description": "建構專案",
         "date": "2023/02/21",

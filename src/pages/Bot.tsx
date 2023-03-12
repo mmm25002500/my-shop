@@ -5,7 +5,7 @@ const product = [
     img: '',
     title: 'Discord Bot 機器人製作',
     description: '製作 Discord Bot 機器人',
-    price: 0,
+    price: -1,
     btn_url: '/bot',
     btn_txt: '查看更多'
   },
@@ -13,7 +13,7 @@ const product = [
     img: '',
     title: 'Line Bot 機器人製作',
     description: '製作 Line Bot 機器人',
-    price: 0,
+    price: -1,
     btn_url: '/bot',
     btn_txt: '查看更多'
   },
@@ -21,7 +21,7 @@ const product = [
     img: '',
     title: 'Telegram Bot 機器人製作',
     description: '製作 Telegram Bot 機器人',
-    price: 0,
+    price: -1,
     btn_url: '/bot',
     btn_txt: '查看更多'
   }

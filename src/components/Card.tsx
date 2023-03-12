@@ -2,7 +2,7 @@ interface Props {
   img: string;
   title: string;
   description: string;
-  price: number;
+  price: number | string;
   btn_url: string;
   btn_txt: string;
 }
@@ -32,7 +32,7 @@ const Card = (props: Props) => {
               </a>
             </div>
             <div className="grid justify-self-end absolute bottom-4">
-              <p className="text-xl text-cyan-600 dark:text-cyan-300">價格: {props.price}</p>
+              <p className="text-lg text-cyan-600 dark:text-cyan-300">價格: {props.price} TWD</p>
             </div>
           </div>
         </div>
